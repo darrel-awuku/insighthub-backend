@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Student Dashboard</h1>
+
+<a href="login.html">Logout</a>
+
+<hr>
+
+<h2>Submit Project</h2>
+
+<form id="projectForm">
+    <input id="title" placeholder="Title"><br><br>
+    <input id="abstract" placeholder="Abstract"><br><br>
+    <input id="department"><br><br>
+    <input id="supervisor"><br><br>
+    <input id="year"><br><br>
+    <input id="file_url"><br><br>
+    <input id="video_link"><br><br>
+    <button>Submit</button>
+</form>
+
+<hr>
+
+<h2>Projects</h2>
+<button onclick="loadProjects()">Load</button>
+<div id="projects"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
