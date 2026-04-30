@@ -6,16 +6,24 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/projects", require("./routes/projects"));
-app.use("/auth", require("./routes/auth"));
-
-
+// TEST ROUTE (you already have this working)
 app.get("/", (req, res) => {
     res.send("InsightHub API is running 🚀");
 });
-console.log("PROJECT ROUTES LOADING...");
+console.log("SERVER STARTED");
 
 
+// 🔥 THIS IS THE IMPORTANT PART
+const projectRoutes = require("./routes/projects");
+app.use("/projects", projectRoutes);
+
+
+// AUTH ROUTES (if you have them)
+const authRoutes = require("./routes/auth");
+app.use("/auth", authRoutes);
+
+
+// LAST LINE
 app.listen(5000, () => {
     console.log("Server running on port 5000");
 });

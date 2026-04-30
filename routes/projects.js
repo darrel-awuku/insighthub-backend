@@ -74,5 +74,6 @@ router.put("/reject/:id", async (req, res) => {
     res.json({ message: "Project rejected" });
 });
 console.log("PROJECT ROUTES FILE LOADED");
+console.log("PROJECT ROUTES LOADED");
 
 module.exports = router;
