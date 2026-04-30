@@ -1,4 +1,4 @@
-const API = "http://localhost:5000";
+const API = "https://insighthub-backend-hiog.onrender.com";
 
 console.log("SCRIPT LOADED");
 
