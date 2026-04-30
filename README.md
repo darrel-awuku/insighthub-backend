@@ -19,16 +19,10 @@ The system is designed to simplify final-year project submission and review with
 ## Deployment Links
 
 Frontend  
-(Insert your GitHub Pages or hosting link here)
+https://github.com/darrel-awuku/insighthub-backend.git
 
 Backend (Render)  
-https://your-backend.onrender.com
-
-API Test Endpoint  
-https://your-backend.onrender.com/projects
-
----
-
+https://insighthub-backend-1.onrender.com
 ## Login Details
 
 ### Test User
@@ -38,8 +32,6 @@ Password: john123
 ### Admin User
 Email: admin@insighthub.com  
 Password: admin123 
-
----
 
 ## Feature Checklist
 
@@ -88,8 +80,3 @@ Password: admin123
 - status
 - user_id
 
----
-
-## Installation Instructions (Run Locally)
-
-### 1. Clone Backend Repository
