@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Admin Panel</h1>
+
+<a href="login.html">Logout</a>
+
+<hr>
+
+<h2>Pending Projects</h2>
+
+<button onclick="loadPending()">Load Pending Projects</button>
+
+<div id="pending"></div>
+
+</div>
+
+<!-- POPUP -->
+<div id="popup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
+
+    <div style="background:white; width:80%; max-width:500px; margin:80px auto; padding:20px; border-radius:10px; text-align:left;">
+
+        <h2 id="popupTitle"></h2>
+        <p id="popupAbstract"></p>
+
+        <p><b>Department:</b> <span id="popupDept"></span></p>
+        <p><b>Supervisor:</b> <span id="popupSup"></span></p>
+        <p><b>Year:</b> <span id="popupYear"></span></p>
+
+        <p><a id="popupFile" target="_blank">View File</a></p>
+        <p><a id="popupVideo" target="_blank">Watch Video</a></p>
+
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
