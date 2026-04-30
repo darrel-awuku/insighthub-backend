@@ -13,6 +13,7 @@ app.use("/auth", require("./routes/auth"));
 app.get("/", (req, res) => {
     res.send("InsightHub API is running 🚀");
 });
+console.log("PROJECT ROUTES LOADING...");
 
 
 app.listen(5000, () => {
